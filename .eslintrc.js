@@ -18,5 +18,3 @@ module.exports = {
         "space-before-blocks": "error"
     }
 };
-
-
