@@ -4,3 +4,4 @@ local_*
 *.log
 .DS_Store
 package-lock.json
+cfg/
