@@ -19,4 +19,23 @@ bot.on('text', msg => {
     return bot.sendMessage(id, `You said: ${ text }`);
 });
 
+bot.on('video', msg=>
+{
+    let id = msg.from.id;
+    let text = msg.text;
+    return bot.sendMessage(id, `You sent vido to me`);
+
+});
+
+
+bot.on(['*', '/*'], (msg, self) => {
+    let id = msg.from.id;
+    let replyToMessage = msg.message_id;
+    let type = self.type;
+    let parseMode = 'html';
+    return bot.sendMessage(
+        id, `This is a <b>${ type }</b> message.`, {replyToMessage, parseMode}
+    );
+});
+
 bot.connect();
