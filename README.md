@@ -1,4 +1,4 @@
-![](http://i.imgur.com/eELz6Aw.jpg)
+It's just my demo playground
 
 The easy way to write Telegram bots.
 
